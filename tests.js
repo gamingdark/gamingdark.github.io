@@ -31,11 +31,7 @@ window.onload = function() {
 	}
 	html += "</ul>";
 	
-	html += "<h2>Specific seven inch devices:</h2><ul>";
-	for (var key in isMobile.seven_inch) {
-		html += "<li>" + key + " - <span " + (isMobile.seven_inch[key] ? "class='y'>YES" : "class='n'>NO") + "</span></li>";
-	}
-	html += "</ul>";
+	html += "<h2>Specific seven inch devices:</h2> - <span " + (isMobile.seven_inch ? "class='y'>YES" : "class='n'>NO") + "</span></ul>";
 	
 	html += "<h2>'Other' devices</h2><ul>";
 	for (var key in isMobile.other) {
