@@ -73,6 +73,10 @@ nav {
     min-width: 150px;
 }
 
+.menu-item:hover {
+	background: #eee;
+}
+
 .menu-item a {
   display: inline-block;
   vertical-align: middle;
