@@ -4,14 +4,22 @@
 	color: rgba(255,255,255,0.75);
 }
 
+/*
+--------------------------------------
+	LEFT SIDE
+--------------------------------------
+*/
+
 .boxLeft {
 	float: left;
 	width: 38%;
-	height: 100%;
+	height: 98%;
 	color: #fff;
 	text-align: center;
 	position: relative;
 }
+
+/* LEFT TOP */
 
 .boxLeft .boxDist {
 	position: absolute;
@@ -20,12 +28,21 @@
 	width: 100%;
 }
 
-.boxLeft .boxStat {
-	position: absolute;
-	bottom: 0;
-	height: 100px;
-	width: 100%;
+.boxLeft .boxDist .box-header {
+	font-size: 25px;
+	font-weight: bold;
+	background: rgba(255,255,255,0.2);
+	border-radius: 25px;
+	padding: 5px;
 }
+
+.boxLeft .boxDist .box-things {
+	background: rgba(255,255,255,0.1);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+/* LEFT MIDDLE */
 
 .boxLeft .boxShip {
 	height: 100%;
@@ -33,9 +50,19 @@
 	padding: 100px 0;
 }
 
-.boxDist .box-header {
-	font-size: 25px;
-	font-weight: bold;
+.boxLeft .boxShip .bigButton {
+	height: 500px;
+	width: 300px;
+	margin: 150px auto 0;
+}
+
+/* LEFT BOTTOM */
+
+.boxLeft .boxStat {
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
 }
 
 .boxStat .box-header {
@@ -43,11 +70,16 @@
 	font-weight: bold;
 }
 
-.boxMiddle,
-.boxRight {
+/*
+--------------------------------------
+	MIDDLE
+--------------------------------------
+*/
+
+.boxMiddle {
 	float: left;
 	width: 30%;
-	height: 100%;
+	height: 98%;
 	margin: 5px;
 	background: rgba(255,255,255,0.5);
 	color: #000;
@@ -55,9 +87,17 @@
 }
 
 /*
-.bigButton {
-	height: 500px;
-	width: 300px;
-	margin: 0 auto;
-}
+--------------------------------------
+	RIGHT SIDE
+--------------------------------------
 */
+
+.boxRight {
+	float: left;
+	width: 30%;
+	height: 98%;
+	margin: 5px;
+	background: rgba(255,255,255,0.5);
+	color: #000;
+	border-radius: 10px;
+}

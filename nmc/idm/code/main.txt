@@ -10,13 +10,11 @@ Settings
 	tiling background:https://gamingdark.github.io/nmc/idm/img/background.jpg
 	stylesheet:https://gamingdark.github.io/nmc/idm/code/css.txt
 	spritesheet:sprResources, 48 by 48, https://gamingdark.github.io/nmc/idm/img/resources.png
-	no particles
-	no bulk particles
 
 Resources
 	*distance
-		name:Space traveled
-		text:[this] lightweeks traveled!
+		name:Lightday
+		text:[?(this < 35)|this|this/7] [?(this < 35)|lightdays|lightweeks] traveled!
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
 	
