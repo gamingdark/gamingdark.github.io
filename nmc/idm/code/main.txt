@@ -14,35 +14,45 @@ Settings
 Resources
 	*distance
 		name:Space traveled
+		text:[this] lightyears traveled
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
 	
 	*statStars
-		desc:You discovered [statStars] new solar system[s?statStars]! Woo!
+		name:Stars discovered
+		text:[this]
+		desc:New stars discovered! Woo!
 		icon:sprResources[0,0]
 		tag:stat
 	*statPlanets
-		desc:You discovered [statPlanets] new planet[s?statPlanets]! Woo!
+		name:Planets discovered
+		text:[this]
+		desc:New planets discovered! Woo!
 		icon:sprResources[1,0]
 		tag:stat
 	*statAliens
-		desc:You discovered [statAliens] new alien species! Woo!
+		name:Alien species discovered
+		text:[this]
+		desc:New alien species discovered! Woo!
 		icon:sprResources[2,0]
 		tag:stat
 	
 	*resWork
 		name:Work units
+		text:[this]
 		desc:Amount of work your workers have worked
 		icon:sprResources[0,1]
 		is always:10
 		tag:res
 	*resScience
 		name:Science units
+		text:[this]
 		desc:Amount of science your scientists have scienced
 		icon:sprResources[1,1]
 		tag:res
 	*resTech
 		name:Tech units
+		text:[this]
 		desc:Amount of technology your techies have teched
 		icon:sprResources[2,1]
 		tag:res
@@ -65,15 +75,18 @@ Layout
 		contains:tag:stat
 		class:boxStat
 		header:Discoveries
+		
 	*boxRes
 		contains:tag:res
 		class:boxRes
 		names:hide
 		header:Resources
+		
 	*boxCap
 		contains:tag:cap
 		class:boxCap
 		header:Spaceship capacity
+		
 	*boxLeft
 		header:Onwards!
 		class:boxLeft
