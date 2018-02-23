@@ -36,6 +36,7 @@ Resources
 		name:Work units
 		desc:Amount of work your workers have worked
 		icon:sprResources[0,1]
+		isAlways:10
 		tag:res
 	*resScience
 		name:Science units
