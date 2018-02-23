@@ -49,28 +49,41 @@ Resources
 		tag:res
 	
 	*capFacility
-		name:Free space
-		desc:Free space remaining in spaceship
+		name:Space
+		desc:Free floor space
 		tag:cap
 	*capLiving
-		name:Free beds
+		name:Beds
 		desc:Free beds in living quarters
 		tag:cap
 	*capStaff
-		name:Free quarters
-		desc:Free quarters for staff members
+		name:Offices
+		desc:Free offices for staff members
 		tag:cap
 
 Layout
 	*boxStat
 		contains:tag:stat
+		class:boxStat
+		names:hide
 		header:Discoveries
 	*boxRes
-		contains:tag:stat
-		header:Discoveries
+		contains:tag:res
+		class:boxRes
+		names:hide
+		header:Resources
 	*boxCap
-		contains:tag:stat
-		header:Discoveries
+		contains:tag:cap
+		class:boxCap
+		header:Spaceship capacity
 	*boxLeft
 		header:Onwards!
-		contains:tag:dist, Buttons, boxStat, boxRes, boxCap
+		class:boxLeft
+		contains:tag:dist, Buttons, boxStat
+	*boxMiddle
+		header:Spaceship
+		class:boxMiddle
+		contains:boxRes, boxCap
+	*boxRigth
+		header:Purchases
+		class:boxRight
