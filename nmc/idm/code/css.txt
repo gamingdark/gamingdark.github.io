@@ -6,9 +6,37 @@
 
 .boxLeft {
 	float: left;
-	width: 40%;
+	width: 48%;
 	height: 100%;
 	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.boxLeft .boxDist {
+	position: absolute;
+	top: 0;
+	height: 100px;
+}
+
+.boxLeft .boxStat {
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+}
+
+.boxLeft .boxShip {
+	height: 100%;
+}
+
+.boxDist .box-header {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.boxStat .box-header {
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .boxMiddle,

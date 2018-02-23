@@ -71,6 +71,15 @@ Resources
 		tag:cap
 
 Layout
+	*boxDist
+		header:Onwards!
+		class:boxDist
+		contains:tag:dist
+		
+	*boxShip
+		class:boxShip
+		contains:Buttons
+		
 	*boxStat
 		contains:tag:stat
 		class:boxStat
@@ -88,7 +97,6 @@ Layout
 		header:Spaceship capacity
 		
 	*boxLeft
-		header:Onwards!
 		class:boxLeft
 		contains:tag:dist, Buttons, boxStat
 	*boxMiddle
@@ -98,3 +106,10 @@ Layout
 	*boxRigth
 		header:Purchases
 		class:boxRight
+		
+Buttons
+	*btnShip
+		name:Your starship
+		dist:Click to perform manual engine burst
+		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
+		on click: yield 0.1 distance
