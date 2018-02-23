@@ -110,6 +110,6 @@ Layout
 Buttons
 	*btnShip
 		name:Your starship
-		dist:Click to perform manual engine burst
+		desc:Click to perform manual engine burst
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
 		on click: yield 0.1 distance
