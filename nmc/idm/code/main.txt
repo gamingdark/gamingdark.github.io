@@ -1,7 +1,79 @@
 Let's make a game!
 	name:Onwards! To Space!
-	by:ExC
+	by:ExC @ The Gaming Dark Studio
 	desc:Demo / alpha / pre-release version of idle game about space exploration
 	created:23/02/2018
 	updated:23/02/2018
-	version:0.001
+	version:0.01
+
+Settings
+	tiling background:https://gamingdark.github.io/nmc/idm/img/background.jpg
+	stylesheet:https://gamingdark.github.io/nmc/idm/code/css.txt
+
+Resources
+	*statDistance
+		name:Space traveled
+		desc:Amount of space between you and Earth! Woo!
+		tag:stat
+	*statStars
+		name:Star systems discovered
+		desc:How many new star systems you visited! Woo!
+		tag:stat
+	*statPlanets
+		name:Planets discovered
+		desc:How many new planets you discovered! Woo!
+		tag:stat
+	*statAliens
+		name:Alien species discovered
+		desc:Hom many aliens you've met! Woo!
+		tag:stat
+	
+	*resWork
+		name:Work units
+		desc:Amount of work your workers have worked
+		tag:res
+	*resScience
+		name:Science units
+		desc:Amount of science your scientists have scienced
+		tag:res
+	*resTech:
+		name:Tech units
+		desc:Amount of technology your techies have teched
+		tag:res
+	
+	*capFacility
+		name:Free space
+		desc:Free space remaining in spaceship
+		tag:cap
+	*capLiving
+		name:Free beds
+		desc:Free beds in living quarters
+		tag:cap
+	*capStaff
+		name:Free quarters
+		desc:Free quarters for staff members
+		tag:cap
+
+Layout
+	*boxResources
+		contains:Resources, Log
+		header:Resources
+	
+	*boxBuildings
+		contains:Buildings
+		header:Facilities
+	
+	*boxPurchases
+		contains: boxResearch, boxTech, boxStaff
+		
+		*boxResearch
+			contains:tag:research
+			header:Research
+			
+		*boxTech
+			contains:tag:tech
+			header:Technologies Installed
+		
+		*boxStaff
+			contains:tag:staff
+			header:Commanding Staff
