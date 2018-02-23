@@ -16,7 +16,7 @@ Settings
 Resources
 	*distance
 		name:Space traveled
-		text:[this/1000] lightyears traveled
+		text:[this] lightweeks traveled!
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
 	
@@ -115,3 +115,5 @@ Buttons
 		desc:Click to perform manual engine burst
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
 		on click:yield 1 distance
+		no text
+		class:bigButton
