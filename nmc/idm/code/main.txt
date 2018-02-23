@@ -9,36 +9,43 @@ Let's make a game!
 Settings
 	tiling background:https://gamingdark.github.io/nmc/idm/img/background.jpg
 	stylesheet:https://gamingdark.github.io/nmc/idm/code/css.txt
+	spritesheet:sprResources, 48 by 48, https://gamingdark.github.io/nmc/idm/img/resources.png
 
 Resources
 	*statDistance
 		name:Space traveled
 		desc:Amount of space between you and Earth! Woo!
-		tag:stat
+		tag:dist
 	*statStars
 		name:Star systems discovered
 		desc:How many new star systems you visited! Woo!
+		icon:sprResources[0,0]
 		tag:stat
 	*statPlanets
 		name:Planets discovered
 		desc:How many new planets you discovered! Woo!
+		icon:sprResources[1,0]
 		tag:stat
 	*statAliens
 		name:Alien species discovered
 		desc:Hom many aliens you've met! Woo!
+		icon:sprResources[2,0]
 		tag:stat
 	
 	*resWork
 		name:Work units
 		desc:Amount of work your workers have worked
+		icon:sprResources[0,1]
 		tag:res
 	*resScience
 		name:Science units
 		desc:Amount of science your scientists have scienced
+		icon:sprResources[1,1]
 		tag:res
-	*resTech:
+	*resTech
 		name:Tech units
 		desc:Amount of technology your techies have teched
+		icon:sprResources[2,1]
 		tag:res
 	
 	*capFacility
@@ -55,25 +62,15 @@ Resources
 		tag:cap
 
 Layout
-	*boxResources
-		contains:Resources, Log
-		header:Resources
-	
-	*boxBuildings
-		contains:Buildings
-		header:Facilities
-	
-	*boxPurchases
-		contains: boxResearch, boxTech, boxStaff
-		
-		*boxResearch
-			contains:tag:research
-			header:Research
-			
-		*boxTech
-			contains:tag:tech
-			header:Technologies Installed
-		
-		*boxStaff
-			contains:tag:staff
-			header:Commanding Staff
+	*boxStat
+		contains:tag:stat
+		header:Discoveries
+	*boxRes
+		contains:tag:stat
+		header:Discoveries
+	*boxCap
+		contains:tag:stat
+		header:Discoveries
+	*boxLeft
+		header:Onwards!
+		contains:tag:dist, Buttons, boxStat, boxRes, boxCap
