@@ -12,23 +12,21 @@ Settings
 	spritesheet:sprResources, 48 by 48, https://gamingdark.github.io/nmc/idm/img/resources.png
 
 Resources
-	*statDistance
+	*distance
 		name:Space traveled
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
+	
 	*statStars
-		name:Star systems discovered
-		desc:How many new star systems you visited! Woo!
+		desc:You discovered [statStars] new solar system[s?statStars]! Woo!
 		icon:sprResources[0,0]
 		tag:stat
 	*statPlanets
-		name:Planets discovered
-		desc:How many new planets you discovered! Woo!
+		desc:You discovered [statPlanets] new planet[s?statPlanets]! Woo!
 		icon:sprResources[1,0]
 		tag:stat
 	*statAliens
-		name:Alien species discovered
-		desc:Hom many aliens you've met! Woo!
+		desc:You discovered [statAliens] new alien species! Woo!
 		icon:sprResources[2,0]
 		tag:stat
 	
@@ -66,7 +64,6 @@ Layout
 	*boxStat
 		contains:tag:stat
 		class:boxStat
-		names:hide
 		header:Discoveries
 	*boxRes
 		contains:tag:res
