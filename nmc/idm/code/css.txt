@@ -12,7 +12,7 @@
 
 .boxLeft {
 	float: left;
-	width: 38%;
+	width: 37%;
 	height: 98%;
 	color: #fff;
 	text-align: center;

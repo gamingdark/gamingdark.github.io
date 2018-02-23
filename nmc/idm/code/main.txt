@@ -14,7 +14,7 @@ Settings
 Resources
 	*distance
 		name:Lightday
-		text:[?(this < 10000000)|[this]|[this/9500000]] [?(this < 10000000)|million kilometers|lightyears] traveled!
+		text:[?(this < 10000)|[this]|[this/9454]] [?(this < 10000)|billion kilometers|lightyears] traveled!
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
 	
@@ -42,7 +42,6 @@ Resources
 		text:[this]
 		desc:Amount of work your workers have worked
 		icon:sprResources[0,1]
-		is always:10
 		tag:res
 	*resScience
 		name:Science units
@@ -112,6 +111,6 @@ Buttons
 		name:Your starship
 		desc:Click to perform manual engine burst
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
-		on click:yield 1 distance
+		on click:yield 26 distance
 		no text
 		class:bigButton
