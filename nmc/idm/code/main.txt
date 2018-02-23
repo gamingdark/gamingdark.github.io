@@ -112,4 +112,4 @@ Buttons
 		name:Your starship
 		desc:Click to perform manual engine burst
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
-		on click: yield 1 distance
+		on click:yield 1 distance
