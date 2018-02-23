@@ -14,7 +14,7 @@ Settings
 Resources
 	*distance
 		name:Lightday
-		text:[?(this < 35)|this|this/7] [?(this < 35)|lightdays|lightweeks] traveled!
+		text:[?(this < 35)|[this]|[this/7]] [?(this < 35)|lightdays|lightweeks] traveled!
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
 	

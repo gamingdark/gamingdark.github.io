@@ -31,15 +31,17 @@
 .boxLeft .boxDist .box-header {
 	font-size: 25px;
 	font-weight: bold;
-	background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.35);
 	border-radius: 25px;
-	padding: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
 }
 
 .boxLeft .boxDist .box-things {
-	background: rgba(255,255,255,0.1);
-	border-radius: 10px;
-	padding: 5px;
+	background: rgba(255,255,255,0.25);
+	border-radius: 25px;
+	font-size: 15px;
+	font-weight: bold;
 }
 
 /* LEFT MIDDLE */
@@ -51,9 +53,13 @@
 }
 
 .boxLeft .boxShip .bigButton {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -150px;
 	height: 500px;
 	width: 300px;
-	margin: 150px auto 0;
 }
 
 /* LEFT BOTTOM */
@@ -65,8 +71,19 @@
 	width: 100%;
 }
 
-.boxStat .box-header {
+.boxLeft .boxStat .box-header {
 	font-size: 20px;
+	font-weight: bold;
+	background: rgba(255,255,255,0.35);
+	border-radius: 25px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.boxLeft .boxStat .box-things {
+	background: rgba(255,255,255,0.25);
+	border-radius: 25px;
+	font-size: 15px;
 	font-weight: bold;
 }
 
