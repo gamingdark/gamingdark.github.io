@@ -128,18 +128,18 @@ Buttons
 		class:bigButton
 
 Buildings
+	*capDefHull
+		name:Default hull extension
+		desc:Expands spaceship's floor space
+		tag:bldCap
+		on earn:yield 3 capFacility
+		cost:150 resWork
 	*capDefBubble
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldCap
 		on earn:yield 3 capLiving
-		cost:100 resWork
-	*capDefHull
-		name:Default hull extension
-		desc:Expands spaceship's floor space
-		tag:bldCap
-		on earn:yield 5 capFacility
-		cost:150 resWork
+		cost:150 resWork 1 capFacility
 	
 	*crewWorker
 		name:Random crew member
@@ -152,11 +152,11 @@ Buildings
 		name:A scientist
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capLiving
-		on tick:yield 1 resScience
+		on tick:yield 0.2 resScience
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capLiving
-		on tick:yield 1 resTech
+		on tick:yield 0.2 resTech
 		tag:bldCrew
