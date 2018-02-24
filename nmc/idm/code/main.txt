@@ -131,7 +131,7 @@ Buildings
 		desc:Tiny bubble for crew to live in
 		tag:bldCap
 		on earn:yield 3 capLiving
-		start with:1
+		on start:yield 1 capDefBubble
 		cost:100 resWork
 	*capDefHull
 		name:Default hull extension
@@ -146,6 +146,7 @@ Buildings
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capLiving
 		on tick:yield 1 resWork
+		on start:yield 1 crewWorker
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
