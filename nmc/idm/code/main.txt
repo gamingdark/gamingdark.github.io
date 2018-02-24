@@ -59,12 +59,12 @@ Resources
 	*capFacility
 		name:Space
 		desc:Free floor space
-		start with:5
+		start with:3
 		tag:cap
 	*capLiving
 		name:Beds
 		desc:Free beds in living quarters
-		start with:5
+		start with:3
 		tag:cap
 	*capStaff
 		name:Offices
@@ -145,18 +145,18 @@ Buildings
 		name:Random crew member
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capLiving
-		on tick:yield 1 resWork
+		on tick:yield 0.1 resWork
 		start with:1
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capLiving
-		on tick:yield 0.2 resScience
+		on tick:yield 0.1 resScience
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capLiving
-		on tick:yield 0.2 resTech
+		on tick:yield 0.1 resTech
 		tag:bldCrew
