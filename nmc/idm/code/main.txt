@@ -94,18 +94,28 @@ Layout
 		contains:tag:cap
 		class:boxCap
 		header:Spaceship capacity
-		
+	
+	*boxBldCap
+		contains:tag:bldCap
+		class:boxBldCap
+		header:Base facilities
+	
+	*boxBldCrew
+		contains:tag:bldCrew
+		class:boxBldCrew
+		header:Crew
+	
 	*boxLeft
 		class:boxLeft
 		contains:boxDist, boxShip, boxStat
 	*boxMiddle
 		header:Spaceship
 		class:boxMiddle
-		contains:boxRes, boxCap
+		contains:boxRes, boxBldCap, boxBldCrew, boxCap
 	*boxRigth
 		header:Purchases
 		class:boxRight
-		
+
 Buttons
 	*btnShip
 		name:Your starship
@@ -114,3 +124,38 @@ Buttons
 		on click:yield 26 distance
 		no text
 		class:bigButton
+
+Buildings
+	*capDefBubble
+		name:Default space bubble
+		desc:Tiny bubble for crew to live in
+		tag:bldCap
+		on earn:yield 3 capLiving
+		start with:1
+		cost:100 resWork
+	*capDefHull
+		name:Default hull extension
+		desc:Expands spaceship's floor space
+		tag:bldCap
+		on earn:yield 5 capFacility
+		start with:1
+		cost:150 resWork
+	
+	*crewWorker
+		name:Random crew member
+		desc:Random crew member to do labor
+		cost:10 resWork, 1 capLiving
+		on tick:yield 1 resWork
+		tag:bldCrew
+	*crewScientist
+		name:A scientist
+		desc:Scientist to do science!
+		cost:15 resWork, 1 capLiving
+		on tick:yield 1 resScience
+		tag:bldCrew
+	*crewEngineer
+		name:An engineer
+		desc:Engineer to do harder tech stuff
+		cost:15 resWork, 1 capLiving
+		on tick:yield 1 resTech
+		tag:bldCrew
