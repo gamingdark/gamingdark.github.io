@@ -123,7 +123,12 @@ Buttons
 		name:Your starship
 		desc:Click to perform manual engine burst
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
-		on click:yield 26 distance
+		on click:
+			yield 26 distance
+			if (chance(10%)) yield 1 resWork
+			if (chance(1%)) yield 1 resResearch
+			if (chance(1%)) yield 1 resTech
+		end
 		no text
 		class:bigButton
 
