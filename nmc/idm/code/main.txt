@@ -152,13 +152,19 @@ Buildings
 		name:A scientist
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capLiving
-		on tick:yield 0.1 resWork 0.1 resScience
+		on tick:
+			yield 0.1 resWork
+			yield 0.1 resScience
+		end
 		on earn:yield 1 resScience
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capLiving
-		on tick:yield 0.1 resWork 0.1 resTech
+		on tick:
+			yield 0.1 resWork
+			yield 0.1 resTech
+		end
 		on earn:yield 1 resTech
 		tag:bldCrew
