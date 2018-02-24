@@ -138,7 +138,7 @@ Buildings
 		desc:Expands spaceship's floor space
 		tag:bldCap
 		on earn:yield 5 capFacility
-		start with:1
+		on start:yield 1 capDefHull
 		cost:150 resWork
 	
 	*crewWorker
