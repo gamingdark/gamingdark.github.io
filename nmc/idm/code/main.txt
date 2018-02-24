@@ -59,10 +59,12 @@ Resources
 	*capFacility
 		name:Space
 		desc:Free floor space
+		start with:5
 		tag:cap
 	*capLiving
 		name:Beds
 		desc:Free beds in living quarters
+		start with:5
 		tag:cap
 	*capStaff
 		name:Offices
@@ -131,14 +133,12 @@ Buildings
 		desc:Tiny bubble for crew to live in
 		tag:bldCap
 		on earn:yield 3 capLiving
-		on start:yield 1 capDefBubble
 		cost:100 resWork
 	*capDefHull
 		name:Default hull extension
 		desc:Expands spaceship's floor space
 		tag:bldCap
 		on earn:yield 5 capFacility
-		on start:yield 1 capDefHull
 		cost:150 resWork
 	
 	*crewWorker
@@ -146,7 +146,7 @@ Buildings
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capLiving
 		on tick:yield 1 resWork
-		on start:yield 1 crewWorker
+		owned:1
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
