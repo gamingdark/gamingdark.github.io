@@ -126,7 +126,7 @@ Buttons
 		on click:
 			yield 26 distance
 			if (chance(10%)) yield 5 resWork
-			if (chance(5%)) yield 1 resResearch
+			if (chance(5%)) yield 1 resScience
 			if (chance(5%)) yield 1 resTech
 		end
 		no text
