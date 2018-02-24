@@ -146,7 +146,7 @@ Buildings
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capLiving
 		on tick:yield 1 resWork
-		owned:1
+		start with:1
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
