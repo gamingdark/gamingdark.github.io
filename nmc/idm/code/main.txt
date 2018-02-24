@@ -139,24 +139,24 @@ Buildings
 		desc:Tiny bubble for crew to live in
 		tag:bldCap
 		on earn:yield 3 capLiving
-		cost:150 resWork 1 capFacility
+		cost:150 resWork, 1 capFacility
 	
 	*crewWorker
 		name:Random crew member
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capLiving
-		on tick:yield 0.1 resWork
+		on tick:yield 0.2 resWork
 		start with:1
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capLiving
-		on tick:yield 0.1 resScience
+		on tick:yield 0.2 resScience
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capLiving
-		on tick:yield 0.1 resTech
+		on tick:yield 0.2 resTech
 		tag:bldCrew
