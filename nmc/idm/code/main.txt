@@ -125,9 +125,9 @@ Buttons
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
 		on click:
 			yield 26 distance
-			if (chance(10%)) yield 1 resWork
-			if (chance(1%)) yield 1 resResearch
-			if (chance(1%)) yield 1 resTech
+			if (chance(10%)) yield 5 resWork
+			if (chance(5%)) yield 1 resResearch
+			if (chance(5%)) yield 1 resTech
 		end
 		no text
 		class:bigButton
@@ -150,7 +150,7 @@ Buildings
 		name:Random crew member
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capLiving
-		on tick:yield 0.2 resWork
+		on tick:yield 0.3 resWork
 		start with:1
 		tag:bldCrew
 	*crewScientist
@@ -158,7 +158,7 @@ Buildings
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capLiving
 		on tick:
-			yield 0.1 resWork
+			yield 0.2 resWork
 			yield 0.1 resScience
 		end
 		on earn:yield 1 resScience
@@ -168,7 +168,7 @@ Buildings
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capLiving
 		on tick:
-			yield 0.1 resWork
+			yield 0.2 resWork
 			yield 0.1 resTech
 		end
 		on earn:yield 1 resTech
