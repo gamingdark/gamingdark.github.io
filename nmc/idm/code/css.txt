@@ -18,15 +18,15 @@
 	text-align: center;
 	position: relative;
 	margin: 5px;
-	border-radius: 10px;
+	border-radius: 25px;
 }
 
 .boxLeft .boxDist .box-header,
 .boxLeft .boxStat .box-header {
 	font-size: 25px;
 	font-weight: bold;
-    background: rgba(150,150,255,0.4);
-    border: 2px solid rgba(150,150,255,1);
+	background: rgba(150,150,255,0.4);
+	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
 	padding: 15px;
 	margin-bottom: 10px;
@@ -34,8 +34,8 @@
 
 .boxLeft .boxDist .box-things,
 .boxLeft .boxStat .box-things {
-    background: rgba(150,150,255,0.2);
-    border: 2px solid rgba(150,150,255,0.8);
+	background: rgba(150,150,255,0.2);
+	border: 2px solid rgba(150,150,255,0.8);
 	border-radius: 25px;
 	font-size: 15px;
 	font-weight: bold;
@@ -49,7 +49,7 @@
 	height: 100px;
 	width: 100%;
 	z-index: 10;
-	padding: 0 0 8px 0;
+	padding: 0 8px 0 0;
 }
 
 /* LEFT MIDDLE */
@@ -82,7 +82,7 @@
 	width: 100%;
 	z-index: 10;
 	height: 115px;
-	padding: 0 0 8px 0;
+	padding: 0 8px 0 0;
 }
 
 /*
@@ -96,8 +96,8 @@
 	width: 30%;
 	height: 98%;
 	margin: 5px;
-    background: rgba(150,150,255,0.2);
-    border: 2px solid rgba(150,150,255,0.8);
+	background: rgba(150,150,255,0.2);
+	border: 2px solid rgba(150,150,255,0.8);
 	border-radius: 25px;
 }
 
@@ -112,7 +112,7 @@
 	width: 30%;
 	height: 98%;
 	margin: 5px;
-    background: rgba(150,150,255,0.2);
-    border: 2px solid rgba(150,150,255,0.8);
+	background: rgba(150,150,255,0.2);
+	border: 2px solid rgba(150,150,255,0.8);
 	border-radius: 25px;
 }
