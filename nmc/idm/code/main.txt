@@ -13,8 +13,8 @@ Settings
 
 Resources
 	*distance
-		name:Lightday
-		text:[?(this < 10000)|[this]|[this/9454]] [?(this < 10000)|billion kilometers|lightyears] traveled!
+		name:AU
+		text:[?(this < 63239000)|[this]|[this/63239]] [?(this < 63239)|astronomical units|lightyears] traveled!
 		desc:Amount of space between you and Earth! Woo!
 		tag:dist
 	
@@ -124,10 +124,10 @@ Buttons
 		desc:Click to perform manual engine burst
 		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
 		on click:
-			yield 26 distance
-			if (chance(10%)) yield 5 resWork
-			if (chance(5%)) yield 1 resScience
-			if (chance(5%)) yield 1 resTech
+			yield 1 distance
+			if (chance(10%)) yield 3 resWork
+			if (chance(2.5%)) yield 1 resScience
+			if (chance(2.5%)) yield 1 resTech
 		end
 		no text
 		class:bigButton
