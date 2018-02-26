@@ -75,7 +75,7 @@ Resources
 		text:[this]
 		desc:Free offices for staff members
 		icon:sprResources[2,2]
-		hidden when 0
+		//hidden when 0
 		tag:cap
 
 Layout
