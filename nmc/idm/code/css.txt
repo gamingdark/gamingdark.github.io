@@ -1,7 +1,7 @@
 #game
 {
 	font-family:"Courier New", sans-serif;
-	color: rgba(255,255,255,0.75);
+	color: #fff;
 }
 
 /*
@@ -19,6 +19,7 @@
 	position: relative;
 	margin: 5px;
 	border-radius: 10px;
+	padding: 0;
 }
 
 /* LEFT TOP */
@@ -29,21 +30,22 @@
 	height: 100px;
 	width: 100%;
 	z-index: 10;
+	padding: 0;
 }
 
 .boxLeft .boxDist .box-header {
 	font-size: 25px;
 	font-weight: bold;
-	background: rgba(200,200,255,0.3);
-	border: 2px solid rgba(200,200,255,1);
+    background: rgba(150,150,255,0.4);
+    border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
 	padding: 15px;
 	margin-bottom: 10px;
 }
 
 .boxLeft .boxDist .box-things {
-	background: rgba(200,200,255,0.2);
-	border: 2px solid rgba(200,200,255,0.9);
+    background: rgba(150,150,255,0.2);
+    border: 2px solid rgba(150,150,255,0.8);
 	border-radius: 25px;
 	font-size: 15px;
 	font-weight: bold;
@@ -57,6 +59,7 @@
 	width: 100%;
 	padding: 100px 0;
 	z-index: 0;
+	padding: 0;
 }
 
 .boxLeft .boxShip .bigButton {
@@ -78,21 +81,22 @@
 	height: 100px;
 	width: 100%;
 	z-index: 10;
+	padding: 0;
 }
 
 .boxLeft .boxStat .box-header {
 	font-size: 20px;
 	font-weight: bold;
-	background: rgba(200,200,255,0.3);
-	border: 2px solid rgba(200,200,255,1);
+    background: rgba(150,150,255,0.4);
+    border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
 	padding: 15px;
 	margin-bottom: 10px;
 }
 
 .boxLeft .boxStat .box-things {
-	background: rgba(200,200,255,0.2);
-	border: 2px solid rgba(200,200,255,0.9);
+    background: rgba(150,150,255,0.2);
+    border: 2px solid rgba(150,150,255,0.8);
 	border-radius: 25px;
 	font-size: 15px;
 	font-weight: bold;
@@ -112,6 +116,7 @@
 	background: rgba(255,255,255,0.5);
 	color: #000;
 	border-radius: 10px;
+	padding: 0;
 }
 
 /*
@@ -128,4 +133,5 @@
 	background: rgba(255,255,255,0.5);
 	color: #000;
 	border-radius: 10px;
+	padding: 0;
 }

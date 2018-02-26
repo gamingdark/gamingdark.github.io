@@ -13,9 +13,9 @@ Settings
 
 Resources
 	*distance
-		name:AU
+		name:Distance traveled
 		text:[?(this < 63239000)|[this]|[this/63239]] [?(this < 63239)|astronomical units|lightyears] traveled!
-		desc:Amount of space between you and Earth! Woo!
+		desc:Amount of space between you and Earth! In astronomical units!
 		tag:dist
 	
 	*statStars
