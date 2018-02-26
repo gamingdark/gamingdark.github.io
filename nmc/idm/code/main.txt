@@ -13,7 +13,7 @@ Settings
 
 Resources
 	*distance
-		name:Distance traveled
+		name:AU
 		text:[?(this < 63239000)|[this]|[this/63239]] [?(this < 63239)|astronomical units|lightyears] traveled!
 		desc:Amount of space between you and Earth! In astronomical units!
 		tag:dist
@@ -58,17 +58,24 @@ Resources
 	
 	*capFacility
 		name:Space
+		text:[this]
 		desc:Free floor space
+		icon:sprResources[0,2]
 		start with:3
 		tag:cap
 	*capLiving
 		name:Beds
+		text:[this]
 		desc:Free beds in living quarters
+		icon:sprResources[1,2]
 		start with:3
 		tag:cap
 	*capStaff
 		name:Offices
+		text:[this]
 		desc:Free offices for staff members
+		icon:sprResources[2,2]
+		hidden when 0
 		tag:cap
 
 Layout
@@ -76,6 +83,7 @@ Layout
 		header:Onwards!
 		class:boxDist
 		contains:tag:dist
+		no tooltip
 		
 	*boxShip
 		class:boxShip
