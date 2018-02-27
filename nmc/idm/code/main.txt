@@ -4,7 +4,7 @@ Let's make a game!
 	desc:Demo / alpha / pre-release version of idle game about space exploration
 	created:23/02/2018
 	updated:23/02/2018
-	version:0.01
+	version:0.1
 
 Settings
 	tiling background:https://gamingdark.github.io/nmc/idm/img/background.jpg

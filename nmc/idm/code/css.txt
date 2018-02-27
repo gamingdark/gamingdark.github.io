@@ -150,13 +150,11 @@
 }
 
 .boxMiddle .boxBldAll {
-	/*height: calc(100% - 190);*/
+	height: calc(100% - 190px);
 	overflow-y: scroll;
-	padding: 120px 0 70px;
 	position: absolute;
-	top: 0;
+	top: 120px;
 	width: 100%;
-	height: 100%;
 	z-index: 5;
 }
 
