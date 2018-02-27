@@ -143,7 +143,8 @@ Buttons
 			if (chance(1%)) yield 1 resScience
 			if (chance(1%)) yield 1 resTech
 		end
-		no text
+		text:[this]
+		no tooltip
 		class:bigButton
 
 Buildings
@@ -153,7 +154,7 @@ Buildings
 		tag:bldBasic
 		on earn:capSpace=capSpace+3
 		icon:sprBuildings[0,0]
-		no text
+		text:[this]
 		cost:150 resWork
 	*basicDefBubble
 		name:Default space bubble
@@ -162,45 +163,45 @@ Buildings
 		on earn:capCrew=capCrew+3
 		icon:sprBuildings[0,0]
 		icon:sprBuildings[1,0]
-		no text
-		cost:100 resWork
+		text:[this]
+		cost:100 resWork, 1 capSpace
 	
 	*crewWorker
 		name:Random crew member
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capCrew
-		on tick:yield 0.3 resWork
+		on tick:yield 0.5 resWork
 		icon:sprBuildings[0,0]
-		no text
+		text:[this]
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capCrew
 		on tick:
-			yield 0.1 resWork
+			yield 0.2 resWork
 			yield 0.1 resScience
 		end
 		icon:sprBuildings[1,0]
-		no text
+		text:[this]
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capCrew
 		on tick:
-			yield 0.1 resWork
+			yield 0.2 resWork
 			yield 0.1 resTech
 		end
 		icon:sprBuildings[2,0]
-		no text
+		text:[this]
 		tag:bldCrew
 		
 	*advAutoDrive
 		name:Auto drive
 		desc:Drive that drives itself!
-		cost:100 resWork, 1 capSpace, 3 resTech
-		on tick:yield 0.3 distance
+		cost:200 resWork, 1 capSpace, 5 resTech
+		on tick:yield 0.5 distance
 		icon:sprBuildings[0,0]
 		icon:sprBuildings[2,0]
 		no text

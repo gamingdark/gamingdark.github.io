@@ -194,4 +194,43 @@
 	padding: 0;
 	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
+	overflow: scroll;
 }
+
+/*
+--------------------------------------
+SCROLLBARS
+--------------------------------------
+*/
+
+#game ::-webkit-scrollbar
+{
+	-webkit-appearance:none;
+	width:17px;
+}
+
+.boxMiddle ::-webkit-scrollbar-track
+{
+	background:#333;
+	box-shadow:
+			0px 0px 0px 1px #f11 inset,
+			0px 0px 0px 3px #444 inset,
+			1px 1px 2px 3px #222 inset
+	;
+}
+
+#game ::-webkit-scrollbar-thumb
+{
+	background:#ccc;
+	box-shadow:
+			0px 0px 0px 1px #333 inset,
+			0px 0px 0px 3px #999 inset,
+			1px 1px 1px 3px #fff inset
+	;
+}
+
+#game ::-webkit-scrollbar-thumb:hover
+{background:#ddd;}
+
+#game ::-webkit-scrollbar-thumb:active
+{background:#bbb;}
