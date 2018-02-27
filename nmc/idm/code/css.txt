@@ -198,9 +198,14 @@
 	margin: 0;
 }
 
-.building.thing.visible.cantAfford {
+.building.thing.visible.cantAfford:before {
 	background-image: url(https://gamingdark.github.io/nmc/idm/img/buildings.png);
 	background-position: -128px 0px;
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
 }
 
 /*
