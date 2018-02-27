@@ -201,6 +201,7 @@
 --------------------------------------
 SCROLLBARS
 --------------------------------------
+*/
 
 #game::-webkit-scrollbar
 {
@@ -233,4 +234,3 @@ SCROLLBARS
 
 #game::-webkit-scrollbar-thumb:active
 {background:#bbb;}
-*/
