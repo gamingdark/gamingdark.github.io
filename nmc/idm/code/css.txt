@@ -121,7 +121,23 @@
 .boxMiddle .boxRes .box-things {
 	background: rgba(150,150,255,0.2);
 	border-bottom: 1px solid rgba(150,150,255,1);
-	padding: 15px;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.boxMiddle .boxCap .box-things {
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	background: rgba(150,150,255,0.2);
+	border-top: 1px solid rgba(150,150,255,1);
+	border-radius: 0 0 25px 25px;
+}
+
+.boxMiddle .boxBldAll {
+	height: calc(100% - 190);
+	overflow-y: scroll;
 }
 
 /*
@@ -138,6 +154,4 @@
 	padding: 0;
 	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
-	font-size: 15px;
-	font-weight: bold;
 }
