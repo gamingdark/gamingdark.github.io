@@ -156,27 +156,19 @@ Buildings
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldBasic
-		on earn:
-			grant 3 capCrew
-			lose 1 capSpace
-		end
+		on earn:grant 3 capCrew
 		cost:100 resWork
-		req:1 capSpace
-		
+	
 	*crewWorker
 		name:Random crew member
 		desc:Random crew member to do labor
-		cost:10 resWork
-		req:1 capCrew
-		on earn:lose 1 capCrew
+		cost:10 resWork, 1 capCrew
 		on tick:yield 0.3 resWork
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
-		cost:15 resWork
-		req:1 capCrew
-		on earn:lose 1 capCrew
+		cost:15 resWork, 1 capCrew
 		on tick:
 			yield 0.1 resWork
 			yield 0.1 resScience
@@ -185,9 +177,7 @@ Buildings
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
-		cost:15 resWork
-		req:1 capCrew
-		on earn:lose 1 capCrew
+		cost:15 resWork, 1 capCrew
 		on tick:
 			yield 0.1 resWork
 			yield 0.1 resTech
@@ -197,8 +187,6 @@ Buildings
 	*advAutoDrive
 		name:Auto drive
 		desc:Drive that drives itself!
-		cost:100 resWork, 3 resTech
-		req:1 capSpace
-		on earn:lose 1 capSpace
+		cost:100 resWork, 1 capSpace, 3 resTech
 		on tick:yield 0.3 distance
 		tag:bldAdv
