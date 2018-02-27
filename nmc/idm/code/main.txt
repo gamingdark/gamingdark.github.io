@@ -161,7 +161,7 @@ Buildings
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldBasic
-		on earn:capCrew=capCrew+3
+		passive:grant 3 capCrew
 		icon:sprBuildings[0,0]
 		text:[this]
 		cost:100 resWork, 1 capSpace
