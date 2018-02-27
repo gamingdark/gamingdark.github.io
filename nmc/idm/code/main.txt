@@ -10,6 +10,7 @@ Settings
 	tiling background:https://gamingdark.github.io/nmc/idm/img/background.jpg
 	stylesheet:https://gamingdark.github.io/nmc/idm/code/css.txt
 	spritesheet:sprResources, 48 by 48, https://gamingdark.github.io/nmc/idm/img/resources.png
+	spritesheet:sprBuildings, 64 by 64, https://gamingdark.github.io/nmc/idm/img/buildings.png
 
 Resources
 	*distance
@@ -151,12 +152,16 @@ Buildings
 		desc:Expands spaceship's floor space
 		tag:bldBasic
 		on earn:capSpace=capSpace+3
+		icon:sprBuildings[0,0]
+		no text
 		cost:150 resWork
 	*basicDefBubble
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldBasic
 		on earn:capCrew=capCrew+3
+		icon:sprBuildings[0,0]
+		no text
 		cost:100 resWork
 	
 	*crewWorker
@@ -164,6 +169,8 @@ Buildings
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capCrew
 		on tick:yield 0.3 resWork
+		icon:sprBuildings[0,0]
+		no text
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
@@ -173,6 +180,8 @@ Buildings
 			yield 0.1 resWork
 			yield 0.1 resScience
 		end
+		icon:sprBuildings[0,0]
+		no text
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
@@ -182,6 +191,8 @@ Buildings
 			yield 0.1 resWork
 			yield 0.1 resTech
 		end
+		icon:sprBuildings[0,0]
+		no text
 		tag:bldCrew
 		
 	*advAutoDrive
@@ -189,4 +200,6 @@ Buildings
 		desc:Drive that drives itself!
 		cost:100 resWork, 1 capSpace, 3 resTech
 		on tick:yield 0.3 distance
+		icon:sprBuildings[0,0]
+		no text
 		tag:bldAdv

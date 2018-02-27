@@ -9,6 +9,8 @@
 	margin: 0;
 }
 
+
+
 /*
 --------------------------------------
 	LEFT SIDE
@@ -156,6 +158,19 @@
 	top: 120px;
 	width: 100%;
 	z-index: 5;
+}
+
+.boxMiddle .boxBldAll .box-header {
+	text-align: center;
+	background: rgba(150,150,255,0.4);
+	border: 1px solid rgba(150,150,255,1) none;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.boxMiddle .boxBldAll .boxBldCrew .box-header {
+	border-top: none;
 }
 
 /*
