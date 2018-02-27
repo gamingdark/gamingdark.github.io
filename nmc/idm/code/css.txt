@@ -233,5 +233,4 @@
 	padding: 0;
 	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
-	overflow: scroll;
 }

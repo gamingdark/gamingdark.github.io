@@ -12,243 +12,325 @@ Settings
 	spritesheet:sprResources, 48 by 48, https://gamingdark.github.io/nmc/idm/img/resources.png
 	spritesheet:sprBuildings, 64 by 64, https://gamingdark.github.io/nmc/idm/img/buildings.png
 
-Resources
-	*distance
-		name:AU
-		text:[?(this < 63239000)|[this]|[this/63239]] [?(this < 63239)|astronomical units|lightyears] traveled!
-		desc:Amount of space between you and Earth! In astronomical units!
-		tag:dist
-	
-	*statStars
-		name:Stars discovered
-		text:[this]
-		desc:New stars discovered! Woo!
-		icon:sprResources[0,0]
-		tag:stat
-	*statPlanets
-		name:Planets discovered
-		text:[this]
-		desc:New planets discovered! Woo!
-		icon:sprResources[1,0]
-		tag:stat
-	*statAliens
-		name:Alien species discovered
-		text:[this]
-		desc:New alien species discovered! Woo!
-		icon:sprResources[2,0]
-		tag:stat
-	
-	*resWork
-		name:WU
-		text:[this]
-		desc:Amount of work your workers have worked
-		icon:sprResources[0,1]
-		tag:res
-	*resScience
-		name:SU
-		text:[this]
-		desc:Amount of science your scientists have scienced
-		icon:sprResources[1,1]
-		tag:res
-	*resTech
-		name:TU
-		text:[this]
-		desc:Amount of technology your techies have teched
-		icon:sprResources[2,1]
-		tag:res
-	
-	*capSpace
-		name:Space
-		text:[this]
-		desc:Free floor space
-		icon:sprResources[0,2]
-		start with:3
-		tag:cap
-	*capCrew
-		name:Crew
-		text:[this]
-		desc:Free beds in living quarters
-		icon:sprResources[1,2]
-		start with:3
-		tag:cap
-	*capStaff
-		name:Staff
-		text:[this]
-		desc:Free offices for staff members
-		icon:sprResources[2,2]
-		hidden when 0
-		tag:cap
+//-------------------
+//  RESOURCES
+//-------------------
 
-Layout
-	*boxDist
-		header:Onwards!
-		class:boxDist
-		contains:tag:dist
-		no tooltip
-		
-	*boxShip
-		class:boxShip
-		contains:Buttons
-		
-	*boxStat
-		contains:tag:stat
-		class:boxStat
-		header:Discoveries
-		
-	*boxRes
-		header:Spaceship
-		contains:tag:res
-		class:boxRes
-		names:hide
-		
-	*boxCap
-		contains:tag:cap
-		class:boxCap
-	
-	*boxBldCrew
-		contains:tag:bldCrew
-		class:boxBldCrew
-		header:Crew
-		costs:hide
-	*boxBldBasic
-		contains:tag:bldBasic
-		class:boxBldBasic
-		header:Basic facilities
-		costs:hide
-	*boxBldAdv
-		contains:tag:bldAdv
-		class:boxBldAdv
-		header:Advanced facilities
-		costs:hide
-		
-	*boxBldAll
-		contains:boxBldCrew, boxBldBasic, boxBldAdv
-		class:boxBldAll
-	
-	*boxLeft
-		class:boxLeft
-		contains:boxDist, boxShip, boxStat
-	*boxMiddle
-		class:boxMiddle
-		contains:boxRes, boxBldAll, boxCap
-	*boxRigth
-		header:Purchases
-		class:boxRight
+	Resources
 
-Buttons
-	*btnShip
-		name:Your starship
-		desc:Click to perform manual engine burst
-		icon:https://gamingdark.github.io/nmc/idm/img/ship.png
-		on click:
-			yield 1 distance
-			if (chance(10%)) yield 3 resWork
-			if (chance(1%)) yield 1 resScience
-			if (chance(1%)) yield 1 resTech
-		end
-		no tooltip
-		no text
-		class:bigButton
+	//-------------------
+	//  STATs
+	//-------------------
+		*distance
+			name:AU
+			text:[?(this < 63239000)|[this]|[this/63239]] [?(this < 63239)|astronomical units|lightyears] traveled!
+			desc:Amount of space between you and Earth! In astronomical units!
+			tag:dist
+		
+		*statStars
+			name:Stars discovered
+			text:[this]
+			desc:New stars discovered! Woo!
+			icon:sprResources[0,0]
+			tag:stat
+		*statPlanets
+			name:Planets discovered
+			text:[this]
+			desc:New planets discovered! Woo!
+			icon:sprResources[1,0]
+			tag:stat
+		*statAliens
+			name:Alien species discovered
+			text:[this]
+			desc:New alien species discovered! Woo!
+			icon:sprResources[2,0]
+			tag:stat
 
-Buildings
-	*basicDefHull
-		name:Default hull extension
-		desc:Expands spaceship's floor space
-		tag:bldBasic
-		on earn:capSpace=capSpace+3
-		icon:sprBuildings[0,0]
-		text:[this]
-		cost:150 resWork
-	*basicDefBubble
-		name:Default space bubble
-		desc:Tiny bubble for crew to live in
-		tag:bldBasic
-		passive:grant 3 capCrew
-		icon:sprBuildings[0,0]
-		text:[this]
-		cost:100 resWork, 1 capSpace
+	//-------------------
+	//  RESs
+	//-------------------
+
+		*resWork
+			name:WU
+			text:[this]
+			desc:Amount of work your workers have worked
+			icon:sprResources[0,1]
+			tag:res
+		*resScience
+			name:SU
+			text:[this]
+			desc:Amount of science your scientists have scienced
+			icon:sprResources[1,1]
+			tag:res
+		*resTech
+			name:TU
+			text:[this]
+			desc:Amount of technology your techies have teched
+			icon:sprResources[2,1]
+			tag:res
+
+	//-------------------
+	//  CAPs
+	//-------------------
+		
+		*capSpace
+			name:Space
+			text:[this]
+			desc:Free floor space
+			icon:sprResources[0,2]
+			start with:3
+			tag:cap
+		*capCrew
+			name:Crew
+			text:[this]
+			desc:Free beds in living quarters
+			icon:sprResources[1,2]
+			start with:3
+			tag:cap
+		*capStaff
+			name:Staff
+			text:[this]
+			desc:Free offices for staff members
+			icon:sprResources[2,2]
+			hidden when 0
+			tag:cap
+
+//-------------------
+//  LAYOUT
+//-------------------
+
+	Layout
+
+	//-------------------
+	//  LEFT BOX
+	//-------------------
+
+		*boxDist
+			header:Onwards!
+			class:boxDist
+			contains:tag:dist
+			no tooltip
+			
+		*boxShip
+			class:boxShip
+			contains:Buttons
+			
+		*boxStat
+			contains:tag:stat
+			class:boxStat
+			header:Discoveries
+			
+	//-------------------
+	//  MIDDLE BOX
+	//-------------------
+		
+		*boxRes
+			header:Spaceship
+			contains:tag:res
+			class:boxRes
+			names:hide
+			
+		*boxBldAll
+			contains:boxBldCrew, boxBldBasic, boxBldAdv
+			class:boxBldAll
+			
+			*boxBldCrew
+				contains:tag:bldCrew
+				class:boxBldCrew
+				header:Crew
+				costs:hide
+				
+			*boxBldBasic
+				contains:tag:bldBasic
+				class:boxBldBasic
+				header:Basic facilities
+				costs:hide
+				
+			*boxBldAdv
+				contains:tag:bldAdv
+				class:boxBldAdv
+				header:Advanced facilities
+				costs:hide
+			
+		*boxCap
+			contains:tag:cap
+			class:boxCap
+			
+	//-------------------
+	//  RIGHT BOX
+	//-------------------
 	
-	*crewWorker
-		name:Random crew member
-		desc:Random crew member to do labor
-		cost:10 resWork, 1 capCrew
-		on tick:yield 0.5 resWork
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldCrew
-	*crewScientist
-		name:A scientist
-		desc:Scientist to do science!
-		cost:15 resWork, 1 capCrew
-		on tick:
-			yield 0.2 resWork
-			yield 0.1 resScience
-		end
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldCrew
-	*crewEngineer
-		name:An engineer
-		desc:Engineer to do harder tech stuff
-		cost:15 resWork, 1 capCrew
-		on tick:
-			yield 0.2 resWork
-			yield 0.1 resTech
-		end
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldCrew
-	*crewEngineer2
-		name:An engineer 2
-		desc:Engineer to do harder tech stuff
-		cost:15 resWork, 1 capCrew
-		on tick:
-			yield 0.2 resWork
-			yield 0.1 resTech
-		end
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldCrew
-	*crewEngineer3
-		name:Superb 1
-		desc:Engineer to do harder tech stuff
-		cost:15 resWork, 1 capCrew
-		on tick:
-			yield 10 resWork
-			yield 10 resTech
-			yield 10 resScience
-		end
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldCrew
-	*crewEngineer4
-		name:Superb 2
-		desc:Engineer to do harder tech stuff
-		cost:15 resWork, 1 capCrew
-		on tick:
-			yield 100 resWork
-			yield 100 resTech
-			yield 100 resScience
-		end
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldCrew
+		*boxUpgRes
+			contains:tag:upgRes
+			header:Research
+			class:boxUpgRes
+	
+		*boxUpgDev
+			contains:tag:upgDev
+			header:Development
+			class:boxUpgDev
+	
+		*boxUpgMis
+			contains:tag:upgMis
+			header:Mission Control
+			class:boxUpgMis
+
+	//-------------------
+	//  MAIN LAYOUT
+	//-------------------
 		
-	*advAutoDrive
-		name:Auto drive
-		desc:Drive that drives itself!
-		req:distance > 200
-		cost:200 resWork, 1 capSpace, 5 resTech
-		on tick:yield 0.5 distance
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldAdv
-		
-	*advAutoDrive
-		name:Auto drive
-		desc:Drive that drives itself!
-		cost:200 resWork, 1 capSpace, 5 resTech
-		on tick:yield 100 distance
-		icon:sprBuildings[0,0]
-		text:[this]
-		tag:bldAdv
+		*boxLeft
+			class:boxLeft
+			contains:boxDist, boxShip, boxStat
+		*boxMiddle
+			class:boxMiddle
+			contains:boxRes, boxBldAll, boxCap
+		*boxRigth
+			header:Operations
+			contains:boxUpgRes, boxUpgDev, boxUpgMis
+			footer:&copy; The Gaming Dark Studio, 2018<//>http://gamingdark.github.io
+			class:boxRight
+
+//-------------------
+//  BUTTONS
+//-------------------
+
+	Buttons
+
+	//-------------------
+	//  SHIP
+	//-------------------
+
+		*btnShip
+			name:Your starship
+			desc:Click to perform manual engine burst
+			icon:https://gamingdark.github.io/nmc/idm/img/ship.png
+			on click:
+				yield 1 distance
+				if (chance(10%)) yield 3 resWork
+				if (chance(1%)) yield 1 resScience
+				if (chance(1%)) yield 1 resTech
+			end
+			no tooltip
+			no text
+			class:bigButton
+
+//-------------------
+//  BUILDINGS
+//-------------------
+
+	Buildings
+	
+	//-------------------
+	//  CREW
+	//-------------------
+	
+		*crewWorker
+			name:Random crew member
+			desc:Random crew member to do labor
+			cost:10 resWork, 1 capCrew
+			on tick:yield 0.5 resWork
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldCrew
+		*crewScientist
+			name:A scientist
+			desc:Scientist to do science!
+			cost:15 resWork, 1 capCrew
+			on tick:
+				yield 0.2 resWork
+				yield 0.1 resScience
+			end
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldCrew
+		*crewEngineer
+			name:An engineer
+			desc:Engineer to do harder tech stuff
+			cost:15 resWork, 1 capCrew
+			on tick:
+				yield 0.2 resWork
+				yield 0.1 resTech
+			end
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldCrew
+		*crewEngineer2
+			name:An engineer 2
+			desc:Engineer to do harder tech stuff
+			cost:15 resWork, 1 capCrew
+			on tick:
+				yield 0.2 resWork
+				yield 0.1 resTech
+			end
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldCrew
+		*crewEngineer3
+			name:Superb 1
+			desc:Engineer to do harder tech stuff
+			cost:15 resWork, 1 capCrew
+			on tick:
+				yield 10 resWork
+				yield 10 resTech
+				yield 10 resScience
+			end
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldCrew
+		*crewEngineer4
+			name:Superb 2
+			desc:Engineer to do harder tech stuff
+			cost:15 resWork, 1 capCrew
+			on tick:
+				yield 100 resWork
+				yield 100 resTech
+				yield 100 resScience
+			end
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldCrew
+
+	//-------------------
+	//  BASIC
+	//-------------------
+			
+		*basicDefHull
+			name:Default hull extension
+			desc:Expands spaceship's floor space
+			tag:bldBasic
+			on earn:capSpace=capSpace+3
+			icon:sprBuildings[0,0]
+			text:[this]
+			cost:150 resWork
+		*basicDefBubble
+			name:Default space bubble
+			desc:Tiny bubble for crew to live in
+			tag:bldBasic
+			passive:grant 3 capCrew
+			icon:sprBuildings[0,0]
+			text:[this]
+			cost:100 resWork, 1 capSpace
+
+	//-------------------
+	//  ADVANCED
+	//-------------------
+			
+		*advAutoDrive
+			name:Auto drive
+			desc:Drive that drives itself!
+			req:distance > 200
+			cost:200 resWork, 1 capSpace, 5 resTech
+			on tick:yield 0.5 distance
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldAdv
+			
+		*advAutoDrive
+			name:Auto drive
+			desc:Drive that drives itself!
+			cost:200 resWork, 1 capSpace, 5 resTech
+			on tick:yield 100 distance
+			icon:sprBuildings[0,0]
+			text:[this]
+			tag:bldAdv
