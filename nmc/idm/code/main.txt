@@ -144,6 +144,7 @@ Buttons
 			if (chance(1%)) yield 1 resTech
 		end
 		no tooltip
+		no text
 		class:bigButton
 
 Buildings
