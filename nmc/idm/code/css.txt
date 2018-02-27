@@ -140,6 +140,22 @@
 	font-weight: bold;
 }
 
+.boxMiddle .boxRes .thing {
+	margin: 2px 9px;
+	height: 48px;
+	width: 90px;
+}
+
+.boxMiddle .boxRes .thing-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 90px;
+	padding: 2px;
+	background: rgba(150,150,255,0.7);
+	border-radius: 10px;
+}
+
 .boxMiddle .boxCap .box-things {
 	padding: 10px;
 	font-size: 15px;
