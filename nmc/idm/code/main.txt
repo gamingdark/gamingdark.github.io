@@ -150,13 +150,13 @@ Buildings
 		name:Default hull extension
 		desc:Expands spaceship's floor space
 		tag:bldBasic
-		on earn:grant 3 capSpace
+		on earn:capSpace=capSpace+3
 		cost:150 resWork
 	*basicDefBubble
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldBasic
-		on earn:grant 3 capCrew
+		on earn:capCrew=capCrew+3
 		cost:100 resWork
 	
 	*crewWorker
