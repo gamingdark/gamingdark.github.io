@@ -69,7 +69,7 @@
 
 .boxLeft .boxShip .bigButton {
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 50%;
 	margin-top: -250px;
 	margin-left: -150px;
@@ -277,6 +277,7 @@
 	background: rgba(150,150,255,0.2);
 	border-top: 1px solid rgba(150,150,255,1);
 	border-bottom: 1px solid rgba(150,150,255,1);
+	color: rgba(150,150,255,0.75);
 	padding: 10px;
 	font-size: 20px;
 	font-weight: bold;
@@ -284,4 +285,31 @@
 
 .boxRight .boxUpg .boxUpgRes .box-header {
 	border-top: none;
+}
+
+/*
+	META
+*/
+
+#meta-buttons {
+	right: 8px;
+	bottom: 8px;
+}
+
+.meta-button {
+	width: 24px;
+	height: 24px;
+	transform: scale(0.7);
+}
+
+.meta-button:after {
+	left: -12px;
+	top: -12px;
+}
+
+#meta-button-info:after {
+	background-image: url(https://gamingdark.github.io/nmc/idm/img/info.png);
+}
+#meta-button-settings:after {
+	background-image: url(https://gamingdark.github.io/nmc/idm/img/settings.png);
 }

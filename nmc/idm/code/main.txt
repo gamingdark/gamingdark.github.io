@@ -192,7 +192,7 @@ Settings
 		*boxRigth
 			header:Operations
 			contains:boxUpg
-			footer:&copy; The Gaming Dark Studio, 2018<//>http://gamingdark.github.io
+			footer:© The Gaming Dark Studio, 2018
 			class:boxRight
 
 //-------------------
