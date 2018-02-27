@@ -163,7 +163,8 @@
 .boxMiddle .boxBldAll .box-header {
 	text-align: center;
 	background: rgba(150,150,255,0.4);
-	border: 1px solid rgba(150,150,255,1) none;
+	border-top: 1px solid rgba(150,150,255,1);
+	border-bottom: 1px solid rgba(150,150,255,1);
 	padding: 10px;
 	font-size: 20px;
 	font-weight: bold;
@@ -171,6 +172,11 @@
 
 .boxMiddle .boxBldAll .boxBldCrew .box-header {
 	border-top: none;
+}
+
+.building .thing-icon {
+	width: 64px;
+	height: 64px;
 }
 
 /*
