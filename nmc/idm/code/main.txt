@@ -161,28 +161,28 @@ Settings
 	//-------------------
 	
 		*boxUpg
-			contains:boxUpgRes, boxUpgDev, boxUpgMis
+			contains:boxUpgRes, boxUpgDev, boxUpgHR, boxUpgMis
 			class:boxUpg
 	
-		*boxUpgRes
-			contains:tag:upgRes
-			header:Research
-			class:boxUpgRes
-	
-		*boxUpgDev
-			contains:tag:upgDev
-			header:Development
-			class:boxUpgDev
-	
-		*boxUpgHR
-			contains:tag:upgHR
-			header:Human Resources
-			class:boxUpgHR
-	
-		*boxUpgMis
-			contains:tag:upgMis
-			header:Mission Control
-			class:boxUpgMis
+			*boxUpgRes
+				contains:tag:upgRes
+				header:Research
+				class:boxUpgRes
+		
+			*boxUpgDev
+				contains:tag:upgDev
+				header:Development
+				class:boxUpgDev
+		
+			*boxUpgHR
+				contains:tag:upgHR
+				header:Human Resources
+				class:boxUpgHR
+		
+			*boxUpgMis
+				contains:tag:upgMis
+				header:Mission Control
+				class:boxUpgMis
 
 	//-------------------
 	//  MAIN LAYOUT
