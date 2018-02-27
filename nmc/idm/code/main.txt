@@ -150,25 +150,33 @@ Buildings
 		name:Default hull extension
 		desc:Expands spaceship's floor space
 		tag:bldBasic
-		on earn:yield 3 capSpace
+		on earn:grant 3 capSpace
 		cost:150 resWork
 	*basicDefBubble
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldBasic
-		on earn:yield 3 capCrew
-		cost:150 resWork, 1 capSpace
-	
+		on earn:
+			grant 3 capCrew
+			lose 1 capSpace
+		end
+		cost:100 resWork
+		req:1 capSpace
+		
 	*crewWorker
 		name:Random crew member
 		desc:Random crew member to do labor
-		cost:10 resWork, 1 capCrew
+		cost:10 resWork
+		req:1 capCrew
+		on earn:lose 1 capCrew
 		on tick:yield 0.3 resWork
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
-		cost:15 resWork, 1 capCrew
+		cost:15 resWork
+		req:1 capCrew
+		on earn:lose 1 capCrew
 		on tick:
 			yield 0.1 resWork
 			yield 0.1 resScience
@@ -177,7 +185,9 @@ Buildings
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
-		cost:15 resWork, 1 capCrew
+		cost:15 resWork
+		req:1 capCrew
+		on earn:lose 1 capCrew
 		on tick:
 			yield 0.1 resWork
 			yield 0.1 resTech
@@ -186,7 +196,9 @@ Buildings
 		
 	*advAutoDrive
 		name:Auto drive
-		desc:Dravie that drives itself!
-		cost:100 resWork, 1 capSpace, 3 resTech
+		desc:Drive that drives itself!
+		cost:100 resWork, 3 resTech
+		req:1 capSpace
+		on earn:lose 1 capSpace
 		on tick:yield 0.3 distance
 		tag:bldAdv
