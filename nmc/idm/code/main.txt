@@ -109,19 +109,21 @@ Layout
 		contains:tag:bldCrew
 		class:boxBldCrew
 		header:Crew
+		costs:hide
 	*boxBldBasic
 		contains:tag:bldBasic
 		class:boxBldBasic
 		header:Basic facilities
+		costs:hide
 	*boxBldAdv
 		contains:tag:bldAdv
 		class:boxBldAdv
 		header:Advanced facilities
+		costs:hide
 		
 	*boxBldAll
 		contains:boxBldCrew, boxBldBasic, boxBldAdv
 		class:boxBldAll
-		costs:hide
 	
 	*boxLeft
 		class:boxLeft
