@@ -326,8 +326,8 @@ Settings
 			text:[this]
 			tag:bldAdv
 			
-		*advAutoDrive
-			name:Auto drive
+		*advAutoDrive2
+			name:Auto drive turbo
 			desc:Drive that drives itself!
 			cost:200 resWork, 1 capSpace, 5 resTech
 			on tick:yield 100 distance
