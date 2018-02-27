@@ -4,6 +4,11 @@
 	color: #fff;
 }
 
+.box {
+	padding: 0;
+	margin: 0;
+}
+
 /*
 --------------------------------------
 	LEFT SIDE
@@ -35,7 +40,7 @@
 .boxLeft .boxDist .box-things,
 .boxLeft .boxStat .box-things {
 	background: rgba(150,150,255,0.2);
-	border: 2px solid rgba(150,150,255,0.8);
+	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
 	font-size: 15px;
 	font-weight: bold;
@@ -96,8 +101,8 @@
 	width: 30%;
 	height: 98%;
 	margin: 5px;
-	background: rgba(150,150,255,0.2);
-	border: 2px solid rgba(150,150,255,0.8);
+	padding: 0;
+	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
 }
 
@@ -112,7 +117,7 @@
 	width: 30%;
 	height: 98%;
 	margin: 5px;
-	background: rgba(150,150,255,0.2);
-	border: 2px solid rgba(150,150,255,0.8);
+	padding: 0;
+	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
 }

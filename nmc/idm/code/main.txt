@@ -75,7 +75,7 @@ Resources
 		text:[this]
 		desc:Free offices for staff members
 		icon:sprResources[2,2]
-		//hidden when 0
+		hidden when 0
 		tag:cap
 
 Layout
@@ -95,6 +95,7 @@ Layout
 		header:Discoveries
 		
 	*boxRes
+		header:Spaceship
 		contains:tag:res
 		class:boxRes
 		names:hide
@@ -124,7 +125,6 @@ Layout
 		class:boxLeft
 		contains:boxDist, boxShip, boxStat
 	*boxMiddle
-		header:Spaceship
 		class:boxMiddle
 		contains:boxRes, boxBldAll, boxCap
 	*boxRigth
@@ -139,8 +139,8 @@ Buttons
 		on click:
 			yield 1 distance
 			if (chance(10%)) yield 3 resWork
-			if (chance(2.5%)) yield 1 resScience
-			if (chance(2.5%)) yield 1 resTech
+			if (chance(1%)) yield 1 resScience
+			if (chance(1%)) yield 1 resTech
 		end
 		no text
 		class:bigButton
@@ -163,32 +163,30 @@ Buildings
 		name:Random crew member
 		desc:Random crew member to do labor
 		cost:10 resWork, 1 capCrew
-		on tick:yield 0.2 resWork
+		on tick:yield 0.3 resWork
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
 		cost:15 resWork, 1 capCrew
 		on tick:
-			yield 0.05 resWork
+			yield 0.1 resWork
 			yield 0.1 resScience
 		end
-		on earn:yield 1 resScience
 		tag:bldCrew
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
 		cost:15 resWork, 1 capCrew
 		on tick:
-			yield 0.05 resWork
+			yield 0.1 resWork
 			yield 0.1 resTech
 		end
-		on earn:yield 1 resTech
 		tag:bldCrew
 		
 	*advAutoDrive
 		name:Auto drive
 		desc:Dravie that drives itself!
-		cost:250 resWork, 1 capSpace, 3 resTech
-		on tick:yield 0.5 distance
+		cost:100 resWork, 1 capSpace, 3 resTech
+		on tick:yield 0.3 distance
 		tag:bldAdv
