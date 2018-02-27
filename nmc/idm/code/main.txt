@@ -162,7 +162,6 @@ Buildings
 		tag:bldBasic
 		on earn:capCrew=capCrew+3
 		icon:sprBuildings[0,0]
-		icon:sprBuildings[1,0]
 		text:[this]
 		cost:100 resWork, 1 capSpace
 	
@@ -203,6 +202,5 @@ Buildings
 		cost:200 resWork, 1 capSpace, 5 resTech
 		on tick:yield 0.5 distance
 		icon:sprBuildings[0,0]
-		icon:sprBuildings[2,0]
-		no text
+		text:[this]
 		tag:bldAdv

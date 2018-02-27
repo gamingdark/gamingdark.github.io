@@ -201,15 +201,14 @@
 --------------------------------------
 SCROLLBARS
 --------------------------------------
-*/
 
-#game ::-webkit-scrollbar
+#game::-webkit-scrollbar
 {
 	-webkit-appearance:none;
 	width:17px;
 }
 
-.boxMiddle ::-webkit-scrollbar-track
+.boxMiddle::-webkit-scrollbar-track
 {
 	background:#333;
 	box-shadow:
@@ -219,7 +218,7 @@ SCROLLBARS
 	;
 }
 
-#game ::-webkit-scrollbar-thumb
+#game::-webkit-scrollbar-thumb
 {
 	background:#ccc;
 	box-shadow:
@@ -229,8 +228,9 @@ SCROLLBARS
 	;
 }
 
-#game ::-webkit-scrollbar-thumb:hover
+#game::-webkit-scrollbar-thumb:hover
 {background:#ddd;}
 
-#game ::-webkit-scrollbar-thumb:active
+#game::-webkit-scrollbar-thumb:active
 {background:#bbb;}
+*/
