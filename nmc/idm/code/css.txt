@@ -135,7 +135,7 @@
 .boxMiddle .boxRes .box-things {
 	background: rgba(150,150,255,0.2);
 	border-bottom: 1px solid rgba(150,150,255,1);
-	padding: 10px 0px;
+	padding: 10px 0px 5px;
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -168,7 +168,7 @@
 	height: calc(100% - 200px);
 	overflow-y: scroll;
 	position: absolute;
-	top: 120px;
+	top: 130px;
 	width: 100%;
 	z-index: 5;
 }
