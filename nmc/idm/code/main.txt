@@ -160,6 +160,10 @@ Settings
 	//  RIGHT BOX
 	//-------------------
 	
+		*boxUpg
+			contains:boxUpgRes,boxUpgDev,boxUpgMis
+			class:boxUpg
+	
 		*boxUpgRes
 			contains:tag:upgRes
 			header:Research
@@ -187,7 +191,7 @@ Settings
 			contains:boxRes, boxBldAll, boxCap
 		*boxRigth
 			header:Operations
-			contains:boxUpgRes, boxUpgDev, boxUpgMis
+			contains:boxUpg
 			footer:&copy; The Gaming Dark Studio, 2018<//>http://gamingdark.github.io
 			class:boxRight
 

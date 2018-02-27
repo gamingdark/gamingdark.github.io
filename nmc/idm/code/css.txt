@@ -10,8 +10,6 @@
 	margin: 0;
 }
 
-
-
 /*
 --------------------------------------
 	LEFT SIDE
@@ -20,11 +18,10 @@
 
 .boxLeft {
 	float: left;
-	width: calc(100% - 340px - 260px - 20px);
+	width: calc(100% - 350px - 270px - 30px);
 	height: calc(100% - 10px);
 	color: #fff;
 	text-align: center;
-	position: relative;
 	margin: 5px;
 	border-radius: 25px;
 }
@@ -98,13 +95,12 @@
 
 .boxMiddle {
 	float: left;
-	width: 340px;
-	height: 98%;
+	width: 350px;
+	height: calc(100% - 10px);
 	margin: 5px;
 	padding: 0;
 	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
-	position: relative;
 }
 
 .boxMiddle .boxRes {
@@ -227,10 +223,66 @@
 
 .boxRight {
 	float: left;
-	width: 260px;
-	height: 98%;
+	width: 270px;
+	height: calc(100% - 10px);
 	margin: 5px;
 	padding: 0;
 	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
+}
+
+.boxRight > .box-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 45px;
+	z-index: 10;
+	text-align: center;
+	
+	background: rgba(150,150,255,0.4);
+	border-bottom: 1px solid rgba(150,150,255,1);
+	border-radius: 25px 25px 0 0;
+	padding: 15px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.boxRight > .box-footer {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	text-align: center;
+	
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	background: rgba(150,150,255,0.2);
+	border-top: 1px solid rgba(150,150,255,1);
+	border-radius: 0 0 25px 25px;
+}
+
+.boxRight .boxUpg {
+	background: rgba(150,150,255,0.2);
+	height: calc(100% - 115px);
+	overflow-y: scroll;
+	position: absolute;
+	top: 120px;
+	width: 100%;
+	z-index: 5;
+}
+
+.boxMiddle .boxUpg .box-header {
+	text-align: center;
+	background: rgba(150,150,255,0.2);
+	border-top: 1px solid rgba(150,150,255,1);
+	border-bottom: 1px solid rgba(150,150,255,1);
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.boxMiddle .boxUpg .boxUpgMis .box-header {
+	border-top: none;
 }
