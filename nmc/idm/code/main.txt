@@ -121,6 +121,7 @@ Layout
 	*boxBldAll
 		contains:boxBldCrew, boxBldBasic, boxBldAdv
 		class:boxBldAll
+		costs:hide
 	
 	*boxLeft
 		class:boxLeft
@@ -181,7 +182,7 @@ Buildings
 			yield 0.2 resWork
 			yield 0.1 resScience
 		end
-		icon:sprBuildings[1,0]
+		icon:sprBuildings[0,0]
 		text:[this]
 		tag:bldCrew
 	*crewEngineer
@@ -192,13 +193,14 @@ Buildings
 			yield 0.2 resWork
 			yield 0.1 resTech
 		end
-		icon:sprBuildings[2,0]
+		icon:sprBuildings[0,0]
 		text:[this]
 		tag:bldCrew
 		
 	*advAutoDrive
 		name:Auto drive
 		desc:Drive that drives itself!
+		req:distance > 200
 		cost:200 resWork, 1 capSpace, 5 resTech
 		on tick:yield 0.5 distance
 		icon:sprBuildings[0,0]
