@@ -198,6 +198,41 @@ Buildings
 		icon:sprBuildings[0,0]
 		text:[this]
 		tag:bldCrew
+	*crewEngineer2
+		name:An engineer 2
+		desc:Engineer to do harder tech stuff
+		cost:15 resWork, 1 capCrew
+		on tick:
+			yield 0.2 resWork
+			yield 0.1 resTech
+		end
+		icon:sprBuildings[0,0]
+		text:[this]
+		tag:bldCrew
+	*crewEngineer3
+		name:Superb 1
+		desc:Engineer to do harder tech stuff
+		cost:15 resWork, 1 capCrew
+		on tick:
+			yield 10 resWork
+			yield 10 resTech
+			yield 10 resScience
+		end
+		icon:sprBuildings[0,0]
+		text:[this]
+		tag:bldCrew
+	*crewEngineer4
+		name:Superb 2
+		desc:Engineer to do harder tech stuff
+		cost:15 resWork, 1 capCrew
+		on tick:
+			yield 100 resWork
+			yield 100 resTech
+			yield 100 resScience
+		end
+		icon:sprBuildings[0,0]
+		text:[this]
+		tag:bldCrew
 		
 	*advAutoDrive
 		name:Auto drive
@@ -205,6 +240,15 @@ Buildings
 		req:distance > 200
 		cost:200 resWork, 1 capSpace, 5 resTech
 		on tick:yield 0.5 distance
+		icon:sprBuildings[0,0]
+		text:[this]
+		tag:bldAdv
+		
+	*advAutoDrive
+		name:Auto drive
+		desc:Drive that drives itself!
+		cost:200 resWork, 1 capSpace, 5 resTech
+		on tick:yield 100 distance
 		icon:sprBuildings[0,0]
 		text:[this]
 		tag:bldAdv
