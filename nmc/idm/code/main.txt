@@ -38,19 +38,19 @@ Resources
 		tag:stat
 	
 	*resWork
-		name:Work units
+		name:WU
 		text:[this]
 		desc:Amount of work your workers have worked
 		icon:sprResources[0,1]
 		tag:res
 	*resScience
-		name:Science units
+		name:SU
 		text:[this]
 		desc:Amount of science your scientists have scienced
 		icon:sprResources[1,1]
 		tag:res
 	*resTech
-		name:Tech units
+		name:TU
 		text:[this]
 		desc:Amount of technology your techies have teched
 		icon:sprResources[2,1]
@@ -64,14 +64,14 @@ Resources
 		start with:3
 		tag:cap
 	*capCrew
-		name:Beds
+		name:Crew
 		text:[this]
 		desc:Free beds in living quarters
 		icon:sprResources[1,2]
 		start with:3
 		tag:cap
 	*capStaff
-		name:Offices
+		name:Staff
 		text:[this]
 		desc:Free offices for staff members
 		icon:sprResources[2,2]

@@ -104,6 +104,26 @@
 	border-radius: 25px;
 }
 
+.boxMiddle .boxRes,
+.boxMiddle .boxCap {
+	text-align: center;
+}
+
+.boxMiddle .boxRes .box-header {
+	background: rgba(150,150,255,0.4);
+	border-bottom: 1px solid rgba(150,150,255,1);
+	border-radius: 25px 25px 0 0;
+	padding: 15px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.boxMiddle .boxRes .box-things {
+	background: rgba(150,150,255,0.2);
+	border-bottom: 1px solid rgba(150,150,255,1);
+	padding: 15px;
+}
+
 /*
 --------------------------------------
 	RIGHT SIDE
@@ -118,4 +138,6 @@
 	padding: 0;
 	border: 2px solid rgba(150,150,255,1);
 	border-radius: 25px;
+	font-size: 15px;
+	font-weight: bold;
 }
