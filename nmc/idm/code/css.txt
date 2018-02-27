@@ -152,6 +152,7 @@
 }
 
 .boxMiddle .boxBldAll {
+	background: rgba(150,150,255,0.2);
 	height: calc(100% - 190px);
 	overflow-y: scroll;
 	position: absolute;
@@ -162,7 +163,7 @@
 
 .boxMiddle .boxBldAll .box-header {
 	text-align: center;
-	background: rgba(150,150,255,0.4);
+	background: rgba(150,150,255,0.2);
 	border-top: 1px solid rgba(150,150,255,1);
 	border-bottom: 1px solid rgba(150,150,255,1);
 	padding: 10px;

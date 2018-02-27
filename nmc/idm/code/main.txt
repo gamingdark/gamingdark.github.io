@@ -161,6 +161,7 @@ Buildings
 		tag:bldBasic
 		on earn:capCrew=capCrew+3
 		icon:sprBuildings[0,0]
+		icon:sprBuildings[1,0]
 		no text
 		cost:100 resWork
 	
@@ -180,7 +181,7 @@ Buildings
 			yield 0.1 resWork
 			yield 0.1 resScience
 		end
-		icon:sprBuildings[0,0]
+		icon:sprBuildings[1,0]
 		no text
 		tag:bldCrew
 	*crewEngineer
@@ -191,7 +192,7 @@ Buildings
 			yield 0.1 resWork
 			yield 0.1 resTech
 		end
-		icon:sprBuildings[0,0]
+		icon:sprBuildings[2,0]
 		no text
 		tag:bldCrew
 		
@@ -201,5 +202,6 @@ Buildings
 		cost:100 resWork, 1 capSpace, 3 resTech
 		on tick:yield 0.3 distance
 		icon:sprBuildings[0,0]
+		icon:sprBuildings[2,0]
 		no text
 		tag:bldAdv
