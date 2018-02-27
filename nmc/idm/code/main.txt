@@ -161,7 +161,7 @@ Settings
 	//-------------------
 	
 		*boxUpg
-			contains:boxUpgRes,boxUpgDev,boxUpgMis
+			contains:boxUpgRes, boxUpgDev, boxUpgMis
 			class:boxUpg
 	
 		*boxUpgRes

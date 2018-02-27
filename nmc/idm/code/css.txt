@@ -3,6 +3,7 @@
 	font-family:"Courier New", sans-serif;
 	color: #fff;
 	min-width: 800px;
+	min-height: 600px;
 }
 
 .box {
