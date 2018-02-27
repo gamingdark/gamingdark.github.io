@@ -56,14 +56,14 @@ Resources
 		icon:sprResources[2,1]
 		tag:res
 	
-	*capFacility
+	*capSpace
 		name:Space
 		text:[this]
 		desc:Free floor space
 		icon:sprResources[0,2]
 		start with:3
 		tag:cap
-	*capLiving
+	*capCrew
 		name:Beds
 		text:[this]
 		desc:Free beds in living quarters
@@ -117,7 +117,7 @@ Layout
 		header:Advanced facilities
 		
 	*boxBldAll
-		contains:tag:boxBldCrew, boxBldBasic, boxBldAdv
+		contains:boxBldCrew, boxBldBasic, boxBldAdv
 		class:boxBldAll
 	
 	*boxLeft
@@ -150,26 +150,25 @@ Buildings
 		name:Default hull extension
 		desc:Expands spaceship's floor space
 		tag:bldBasic
-		on earn:yield 3 capFacility
+		on earn:yield 3 capSpace
 		cost:150 resWork
 	*basicDefBubble
 		name:Default space bubble
 		desc:Tiny bubble for crew to live in
 		tag:bldBasic
-		on earn:yield 3 capLiving
-		cost:150 resWork, 1 capFacility
+		on earn:yield 3 capCrew
+		cost:150 resWork, 1 capSpace
 	
 	*crewWorker
 		name:Random crew member
 		desc:Random crew member to do labor
-		cost:10 resWork, 1 capLiving
+		cost:10 resWork, 1 capCrew
 		on tick:yield 0.2 resWork
-		start with:1
 		tag:bldCrew
 	*crewScientist
 		name:A scientist
 		desc:Scientist to do science!
-		cost:15 resWork, 1 capLiving
+		cost:15 resWork, 1 capCrew
 		on tick:
 			yield 0.05 resWork
 			yield 0.1 resScience
@@ -179,7 +178,7 @@ Buildings
 	*crewEngineer
 		name:An engineer
 		desc:Engineer to do harder tech stuff
-		cost:15 resWork, 1 capLiving
+		cost:15 resWork, 1 capCrew
 		on tick:
 			yield 0.05 resWork
 			yield 0.1 resTech
@@ -190,6 +189,6 @@ Buildings
 	*advAutoDrive
 		name:Auto drive
 		desc:Dravie that drives itself!
-		cost:500 resWork, 1 capSpace, 3 resTech
+		cost:250 resWork, 1 capSpace, 3 resTech
 		on tick:yield 0.5 distance
 		tag:bldAdv
