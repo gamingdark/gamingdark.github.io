@@ -211,11 +211,11 @@ SCROLLBARS
 
 .boxMiddle::-webkit-scrollbar-track
 {
-	background:#333;
+	background:#f33;
 	box-shadow:
 			0px 0px 0px 1px #f11 inset,
-			0px 0px 0px 3px #444 inset,
-			1px 1px 2px 3px #222 inset
+			0px 0px 0px 3px #f44 inset,
+			1px 1px 2px 3px #f22 inset
 	;
 }
 
