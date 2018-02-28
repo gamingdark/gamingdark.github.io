@@ -176,7 +176,7 @@ Settings
 		
 			*boxUpgHR
 				contains:tag:upgHR
-				header:Human Resources
+				header:Training Center
 				class:boxUpgHR
 		
 			*boxUpgMis

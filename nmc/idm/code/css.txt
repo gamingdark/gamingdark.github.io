@@ -306,8 +306,8 @@
 */
 
 #meta-buttons {
-	right: 8px;
-	bottom: 8px;
+	right: 100px;
+	bottom: 10px;
 }
 
 .meta-button {
