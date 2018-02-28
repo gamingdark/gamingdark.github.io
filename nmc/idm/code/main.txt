@@ -332,7 +332,7 @@ Settings
 			
 		*advAutoDrive
 			name:Stick shift engine
-			desc:Most basic engine suitable for interstellar travel.<//><.>[this:ps]
+			desc:Most basic engine suitable for interstellar travel.
 			req:50 distance
 			cost:200 resWork, 1 capSpace, 5 resTech
 			on tick:yield 0.25 distance
