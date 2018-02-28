@@ -357,7 +357,7 @@ Settings
 		*upgExtraShifts
 			name:Extra shifts
 			desc:Install extra shifts in your engines, allowing them to reach higher speed.<//><.>Engines speed +25%
-			req:3 tag:bldEngine
+			req:3 bldEngine
 			cost:3 resScience, 15 resTech
 			tag:upgTech
 			no text
