@@ -359,7 +359,7 @@ Settings
 			desc:Install extra shifts in your engines, allowing them to reach higher speed.<//><.>Engines speed +25%
 			req:3 advAutoDrive
 			cost:3 resScience, 15 resTech
-			tag:upgTech
+			tag:upgDev
 			no text
 			icon:sprUpgrades[1,0]
 			passive:multiply distance yield of tag:bldEngine by 1.25
