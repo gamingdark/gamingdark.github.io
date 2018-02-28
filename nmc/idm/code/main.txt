@@ -11,6 +11,7 @@ Settings
 	stylesheet:https://gamingdark.github.io/nmc/idm/code/css.txt
 	spritesheet:sprResources, 48 by 48, https://gamingdark.github.io/nmc/idm/img/resources.png
 	spritesheet:sprBuildings, 64 by 64, https://gamingdark.github.io/nmc/idm/img/buildings.png
+	spritesheet:sprUpgrades, 48 by 48, https://gamingdark.github.io/nmc/idm/img/upgrades.png
 
 //-------------------
 //  RESOURCES
@@ -168,21 +169,25 @@ Settings
 				contains:tag:upgRes
 				header:Research
 				class:boxUpgRes
+				costs:hide
 		
 			*boxUpgDev
 				contains:tag:upgDev
 				header:Development
 				class:boxUpgDev
+				costs:hide
 		
 			*boxUpgHR
 				contains:tag:upgHR
 				header:Training Center
 				class:boxUpgHR
+				costs:hide
 		
 			*boxUpgMis
 				contains:tag:upgMis
 				header:Mission Control
 				class:boxUpgMis
+				costs:hide
 
 	//-------------------
 	//  MAIN LAYOUT
@@ -316,7 +321,7 @@ Settings
 			name:Default space bubble
 			desc:Tiny bubble for crew to live in
 			tag:bldBasic
-			passive:grant 3 capCrew
+			on earn:capCrew=capCrew+3
 			icon:sprBuildings[0,0]
 			text:[this]
 			cost:100 resWork, 1 capSpace
@@ -326,20 +331,35 @@ Settings
 	//-------------------
 			
 		*advAutoDrive
-			name:Auto drive
-			desc:Drive that drives itself!
-			req:distance > 200
+			name:Stick shift engine
+			desc:Most basic engine suitable for interstellar travel.<//><.>[this:ps]
+			req:50 distance
 			cost:200 resWork, 1 capSpace, 5 resTech
-			on tick:yield 0.5 distance
+			on tick:yield 0.25 distance
 			icon:sprBuildings[0,0]
 			text:[this]
-			tag:bldAdv
-			
-		*advAutoDrive2
-			name:Auto drive turbo
-			desc:Drive that drives itself!
-			cost:200 resWork, 1 capSpace, 5 resTech
-			on tick:yield 100 distance
-			icon:sprBuildings[0,0]
-			text:[this]
-			tag:bldAdv
+			tags:bldAdv bldEngine
+
+//-------------------
+//  UPGRADES
+//-------------------
+
+	Upgrades
+	
+	//-------------------
+	//  RESEARCH
+	//-------------------
+	
+	//-------------------
+	//  TECH
+	//-------------------
+	
+		*upgExtraShifts
+			name:Extra shifts
+			desc:Install extra shifts in your engines, allowing them to reach higher speed.<//><.>Engines speed +25%
+			req:3 tag:bldEngine
+			costs:3 resScience, 15 resTech
+			tag:upgTech
+			no text
+			icon:sprUpgrades[1,0]
+			passive:multiply distance yield of tag:bldEngine by 1.25
