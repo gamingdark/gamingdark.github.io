@@ -358,7 +358,7 @@ Settings
 			name:Extra shifts
 			desc:Install extra shifts in your engines, allowing them to reach higher speed.<//><.>Engines speed +25%
 			req:3 tag:bldEngine
-			costs:3 resScience, 15 resTech
+			cost:3 resScience, 15 resTech
 			tag:upgTech
 			no text
 			icon:sprUpgrades[1,0]
