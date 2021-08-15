@@ -7,10 +7,13 @@ $(function() {
    // });
 });
 
-function generateImages(url, idtag) {
-	$.ajax(url, function(data) {
-		console.log(data);
-	});
+function generateImages(listUrl, idtag) {
 	console.log($(idtag));
+	$.ajax({
+		url: listUrl,
+		success: function(data) {
+			console.log(data);
+		}
+	});
 }
     
