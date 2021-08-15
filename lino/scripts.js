@@ -1,10 +1,20 @@
 $(function() {
 	generateImages('images/covers/', '#covers-gallery');
-	//lightGallery(document.getElementById('lightgallery'), {
-    //    plugins: [lgZoom, lgThumbnail],
-    //    speed: 500,
-    //    ... other settings
-   // });
+	generateImages('images/articles/', '#articles-gallery');
+    
+    lightGallery(document.getElementById('covers-gallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+		licenseKey: 'lino',
+		thumbnails: true
+    });
+    
+    lightGallery(document.getElementById('articles-gallery'), {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+		licenseKey: 'lino',
+		thumbnails: true
+    });
 });
 
 function generateImages(folderUrl, idtag) {
