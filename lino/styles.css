@@ -1,0 +1,71 @@
+body {
+	color: white;
+	background: black;
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+a {
+	color: white;
+}
+
+section {
+	width: 80%;
+	max-width: 1000px;
+	min-width: 500px;
+	margin: 100px auto 0;
+	text-align: center;
+}
+
+article {
+	margin-top: 50px;
+}
+
+/** GALLERIES **/
+
+#covers, #articles {
+}
+
+
+/** CONTACTS **/
+
+#contacts {
+	width: 500px;
+    margin: 50px auto 0;
+}
+
+#contacts img {
+	float: left;
+    width: 40%;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#contacts div {
+	float: right;
+    margin: 15px 0;
+    height: 170px;
+    width: 40%;
+}
+
+#contacts div p {
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+#contacts p.name {
+	font-weight: bold;
+}
+
+#contacts p.fb-link {
+	background: url('images/fb.png');
+	background-size: 30px;
+	padding-left: 40px;
+	background-repeat-x: no-repeat;
+}
+
+#contacts br {
+	float: none;
+	clear: both;
+}
