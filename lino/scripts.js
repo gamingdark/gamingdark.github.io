@@ -7,12 +7,14 @@ $(function() {
    // });
 });
 
-function generateImages(listUrl, idtag) {
+function generateImages(folderUrl, idtag) {
 	console.log($(idtag));
-    $.get(listUrl, function(data) {
-		var list = data.responseText;
-        $(idtag).html(list);
-		console.log(data);
+    $.get(folderUrl+'list.txt', function(data) {
+		var list = data.split('\n\r');
+		for (img in list) {
+			var imgTag = '<a href="'+folderUrl+'/'+img+'"><img src="'+folderUrl+'/'+img+'" /></a>';
+			$(idtag).append(imgTag);
+		}
     }); 
 }
     
