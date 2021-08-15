@@ -10,10 +10,10 @@ $(function() {
 function generateImages(folderUrl, idtag) {
 	console.log($(idtag));
     $.get(folderUrl+'list.txt', function(data) {
-		var list = data.replace('\r','').split('\n');
-	    console.log(list);
-		for (img in list) {
-			var imgTag = '<a href="'+folderUrl+'/'+img+'"><img src="'+folderUrl+'/'+img+'" /></a>';
+		var list = data.replaceAll('\r','').split('\n');
+		console.log(list);
+		for (i in list) {
+			var imgTag = '<a href="'+folderUrl+'/'+list[i]+'"><img src="'+folderUrl+'/thumbnails/'+list[i]+'" /></a>';
 			$(idtag).append(imgTag);
 		}
     }); 
