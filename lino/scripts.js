@@ -11,6 +11,7 @@ function generateImages(folderUrl, idtag) {
 	console.log($(idtag));
     $.get(folderUrl+'list.txt', function(data) {
 		var list = data.split('\n\r');
+	    console.log(list);
 		for (img in list) {
 			var imgTag = '<a href="'+folderUrl+'/'+img+'"><img src="'+folderUrl+'/'+img+'" /></a>';
 			$(idtag).append(imgTag);
