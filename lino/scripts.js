@@ -1,5 +1,5 @@
 $(function() {
-	generateImages('images/covers/list.txt', '#covers-gallery');
+	generateImages('images/covers/', '#covers-gallery');
 	//lightGallery(document.getElementById('lightgallery'), {
     //    plugins: [lgZoom, lgThumbnail],
     //    speed: 500,
