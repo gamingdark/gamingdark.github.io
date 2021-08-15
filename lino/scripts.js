@@ -11,7 +11,7 @@ function generateImages(listUrl, idtag) {
 	console.log($(idtag));
     $.get(listUrl, function(data) {
 		var list = data.responseText;
-        console.log(list);
+        $(idtag).html(list);
     }); 
 }
     
