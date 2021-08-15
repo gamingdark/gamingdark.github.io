@@ -9,11 +9,9 @@ $(function() {
 
 function generateImages(listUrl, idtag) {
 	console.log($(idtag));
-	$.ajax({
-		url: listUrl,
-		success: function(data) {
-			console.log(data);
-		}
-	});
+    $.get(listUrl, function(data) {
+		var list = data.responseText;
+        console.log(list);
+    }); 
 }
     
