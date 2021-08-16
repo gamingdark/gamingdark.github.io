@@ -23,8 +23,7 @@ article {
 /** GALLERIES **/
 
 #covers a, #articles a {
-	float: left;
-	display: block;
+	display: inline-block;
 	height: 250px;
 	margin: 3px;
 }
