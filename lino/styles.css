@@ -10,9 +10,8 @@ a {
 }
 
 section {
-	width: 80%;
-	max-width: 1000px;
-	min-width: 500px;
+	width: 70%;
+	max-width: 1500px;
 	margin: 100px auto;
 	text-align: center;
 }
@@ -27,38 +26,33 @@ article {
 	float: left;
 	display: block;
 	height: 250px;
-	margin: 2px;
-	border-radius: 5px;
+	margin: 3px;
 }
 
 #covers a img, #articles a img {
 	height: 250px;	
-}
-
-span.clr {
-	float: none;
-	clear: both;
+	border-radius: 10px;
 }
 
 /** CONTACTS **/
 
 #contacts {
 	width: 500px;
-    margin: 50px auto 0;
+    	margin: 50px auto 0;
 }
 
 #contacts img {
 	float: left;
-    width: 40%;
-    height: 200px;
-    border-radius: 50%;
+    	width: 40%;
+    	height: 200px;
+    	border-radius: 50%;
 }
 
 #contacts div {
 	float: right;
-    margin: 15px 0;
-    height: 170px;
-    width: 40%;
+    	margin: 15px 0;
+    	height: 170px;
+    	width: 40%;
 }
 
 #contacts div p {
