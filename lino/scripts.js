@@ -10,7 +10,6 @@ function generateImages(folderUrl, idTag) {
 			var imgTag = '<a href="'+folderUrl+'/'+list[i]+'"><img src="'+folderUrl+'/thumbnails/'+list[i]+'" /></a>';
 			$('#'+idTag).append(imgTag);
 		}
-	    	$('#'+idTag).append('<span class="clr"></span>');
 		
 		initGallery(idTag);
     }); 
@@ -24,4 +23,3 @@ function initGallery(idTag) {
 		thumbnails: true
     });
 }
-    
